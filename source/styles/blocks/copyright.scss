@@ -1,0 +1,42 @@
+.copyright {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover .copyright__text {
+    color: $add-green;
+  }
+
+  &:hover .copyright__svg {
+    stroke: $add-green;
+    fill: $add-green;
+    color: $add-green;
+  }
+
+  &:focus .copyright__text {
+    color: $accent-green;
+    opacity: 0.5;
+  }
+
+  &:focus .copyright__svg {
+    stroke: $accent-green;
+    fill: $accent-green;
+    color: $accent-green;
+    opacity: 0.5;
+  }
+}
+
+.copyright__svg {
+  color: black;
+}
+
+.copyright__text {
+  color: $text-black;
+  font-family: "Raleway", Arial, serif;
+  font-size: 11px;
+  line-height: 12.91px;
+  font-weight: 400;
+  vertical-align: middle;
+  margin-right: 8px;
+}

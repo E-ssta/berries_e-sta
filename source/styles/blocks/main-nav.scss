@@ -1,0 +1,126 @@
+.main-nav {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__logo {
+  margin: 0;
+  padding: 6px 9px 4px;
+
+  .logo__text {
+    display: none;
+  }
+}
+
+.logo__picture {
+  width: 34px;
+  height: 42px;
+}
+
+
+.main-nav--closed .main-nav__toggle {
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 30px;
+  padding: 0;
+  margin: 15px 7.5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: $accent-green;
+    border-radius: 40px;
+    box-shadow: 0 12.5px 0 0 $accent-green, 0 25px 0 0 $accent-green;
+
+
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 30px;
+  padding: 0;
+  margin: 15px 7.5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: center;
+    right: 0;
+    width: 28px;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: $accent-green;
+
+    &:hover, &:focus {
+      background-color: $add-green;
+    }
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__menu {
+  @media (max-width: calc($tablet-width - 1px)) {
+
+    .main-nav--closed & {
+      display: none;
+    }
+
+    .main-nav--opened & {
+      display: block;
+      position: absolute;
+      top: 68px;
+      left: 0;
+      z-index: 1;
+    }
+
+    .no-js & {
+      display: block;
+      position: static;
+    }
+  }
+}
+
+.main-nav__toggle:hover::before,
+.main-nav__toggle:focus::before,
+.main-nav__toggle:hover::after,
+.main-nav__toggle:focus::after {
+  background-color: $add-green;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before,
+.main-nav--closed .main-nav__toggle:focus::before {
+  box-shadow: 0 12.5px 0 0 $add-green, 0 25px 0 0 $add-green;
+}

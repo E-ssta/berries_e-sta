@@ -1,0 +1,86 @@
+.data__address, .data__tel, .data__mail {
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.data__address {
+  padding-left: 36px;
+  position: relative;
+  font-style: normal;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+    background-image: url("../../icons/leaf-address.svg");
+    background-size: 15px 23px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.data__tel {
+  position: relative;
+  text-decoration: none;
+  color: $text-black;
+
+  &:hover,
+  &:focus {
+    color: $add-green;
+
+    svg {
+      color: $add-green;
+      fill: $add-green;
+    }
+  }
+
+  &:active {
+    color: $accent-green;
+
+    svg {
+      color: $accent-green;
+      fill: $accent-green;
+    }
+  }
+}
+
+.data__logo {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.data__mail {
+  position: relative;
+  text-decoration: none;
+  color: $text-black;
+
+  &:hover,
+  &:focus {
+    color: $add-green;
+
+    svg {
+      color: $add-green;
+      fill: $add-green;
+      stroke: $add-green;
+    }
+  }
+
+  &:active {
+    color: $accent-green;
+
+    svg {
+      color: $accent-green;
+      fill: $accent-green;
+      stroke: $accent-green;
+    }
+  }
+}

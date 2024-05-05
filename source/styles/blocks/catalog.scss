@@ -1,0 +1,31 @@
+.catalog__title {
+  font-family: "Comfortaa", Arial, serif;
+  color: $accent-green;
+  font-size: 36px;
+  line-height: 40.14px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 48px;
+    line-height: 53.52px;
+  }
+}
+
+.catalog__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    gap: 52px;
+    grid-template-columns: 46% 46%;
+  }
+}

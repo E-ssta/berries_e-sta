@@ -1,0 +1,78 @@
+.page-main__info {
+  max-width: $tablet-width;
+  margin: 0 auto;
+  padding: 60px 28px 190px 28px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../images/berries-main-mobile@2x@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    max-width: $desktop-width;
+    padding: 142px 22px 420px 214px;
+  }
+}
+
+.page-main__catalog {
+  max-width: $tablet-width;
+  margin: 0 auto;
+  padding: 60px 28px;
+
+  @media (min-width: $tablet-width) {
+    max-width: $desktop-width;
+    padding: 100px 94px;
+  }
+}
+
+.page-main__news {
+  position: relative;
+  max-width: $tablet-width;
+  margin: 0 auto;
+  padding: 94px 26px 60px;
+
+  @media (min-width: $tablet-width) {
+    max-width: $desktop-width;
+    padding: 114px 26px 110px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 228px;
+    height: 32px;
+    background-image: url("../../images/section-line-leaf.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 296px;
+      height: 42px;
+    }
+  }
+}
+
+.page-main__contacts {
+  position: relative;
+  max-width: $tablet-width;
+  margin: 0 auto;
+  padding: 104px 0 60px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 228px;
+    height: 32px;
+    background-image: url("../../images/section-line-leaf.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
