@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    display: contents;
+  }
 }
 
 .footer__logo {
@@ -9,13 +13,33 @@
   height: 52px;
   margin: 0 4px;
 
+  @media (min-width: $tablet-width) {
+    width: 130px;
+    height: 60px;
+    margin: 0 5px;
+  }
+
   .logo__text {
     display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
 }
 
 .footer__copyright {
   text-align: end;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18.78px;
+  }
+}
+
+.copyright__svg {
+  width: 26px;
+  height: 32px;
 }
 
 // .footer {

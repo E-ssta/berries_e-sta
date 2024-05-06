@@ -13,6 +13,12 @@
     font-size: 48px;
     line-height: 53.52px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 52px;
+    line-height: 57.98px;
+    margin-bottom: 92px;
+  }
 }
 
 .catalog__list {
@@ -27,5 +33,10 @@
     display: grid;
     gap: 52px;
     grid-template-columns: 46% 46%;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 24px;
+    grid-template-columns: 23% 23% 23% 23%;
   }
 }

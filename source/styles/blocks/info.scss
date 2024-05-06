@@ -16,6 +16,14 @@
     margin: 0;
     margin-bottom: 48px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    font-size: 52px;
+    line-height: 57.98px;
+    margin: 0;
+    margin-bottom: 52px;
+  }
 }
 
 .info__benefits {
@@ -24,10 +32,13 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    font-size: 48px;
-    line-height: 53.52px;
     margin: 0;
     margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 23.5px;
+    margin-bottom: 52px;
   }
 }
 
@@ -38,7 +49,7 @@
 
   @media (min-width: $tablet-width) {
     width: max-content;
-    margin: 0;
+    margin-left: 37px;
     padding: 16px 104px;
   }
 }

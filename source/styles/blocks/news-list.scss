@@ -18,22 +18,48 @@
     background-image: url("../../images/news-leaf.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 96px;
+      height: 40px;
+      bottom: 42px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     width: 48%;
+    padding: 32px 36px 106px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 31.9%;
+    padding: 32px 36px 108px;
   }
 }
 
 .article__title {
+  display: flex;
   font-family: "Raleway", Arial, serif;
   font-size: 20px;
   line-height: 23.48px;
   font-weight: 400;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   margin: 0 12px;
   margin-bottom: 20px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 32.87px;
+    margin-bottom: 24px;
+    min-height: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 96px;
+  }
 }
 
 .article__text {
@@ -41,6 +67,11 @@
   margin-bottom: 12px;
   padding: 0;
   min-height: 180px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 196px;
+    margin-bottom: 16px;
+  }
 }
 
 .article__date {

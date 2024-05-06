@@ -48,5 +48,17 @@
   color: $text-black;
   max-width: $tablet-width;
   margin: 0 auto;
-  padding: 20px 26px;
+  padding: 11px 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: $desktop-width;
+    padding: 22px 26px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    padding: 24px 159px 24px 156px;
+  }
 }

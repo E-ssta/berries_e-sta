@@ -12,6 +12,11 @@
     max-width: $desktop-width;
     padding: 142px 22px 420px 214px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    padding: 172px 351px 252px 540px;
+  }
 }
 
 .page-main__catalog {
@@ -22,6 +27,11 @@
   @media (min-width: $tablet-width) {
     max-width: $desktop-width;
     padding: 100px 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    padding: 100px 156px;
   }
 }
 
@@ -34,6 +44,11 @@
   @media (min-width: $tablet-width) {
     max-width: $desktop-width;
     padding: 114px 26px 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    padding: 140px 156px 100px;
   }
 
   &::before {
@@ -62,6 +77,20 @@
   margin: 0 auto;
   padding: 104px 0 60px;
 
+  @media (min-width: $tablet-width) {
+    max-width: $desktop-width;
+    padding: 114px 0 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    padding: 142px 158px 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -74,5 +103,10 @@
     background-image: url("../../images/section-line-leaf.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 296px;
+      height: 42px;
+    }
   }
 }
