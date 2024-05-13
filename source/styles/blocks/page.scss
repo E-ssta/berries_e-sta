@@ -21,6 +21,21 @@
   }
 }
 
+.page__form {
+  font-family: "Raleway", "Arial", serif;
+  color: $text-black;
+  font-size: 16px;
+  line-height: 18.78px;
+  font-weight: 400;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
 .page__header {
   position: relative;
   z-index: 500;

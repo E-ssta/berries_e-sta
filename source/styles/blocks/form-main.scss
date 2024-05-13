@@ -1,0 +1,21 @@
+.form-main__info {
+  max-width: $tablet-width;
+  margin: 0 auto;
+  padding: 184px 26px 41px 26px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../images/form-main-desktop@2x@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 120px;
+
+  @media (min-width: $tablet-width) {
+    max-width: $desktop-width;
+    padding: 300px 118px 36px 118px;
+    background-size: auto 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    padding: 300px 444px 46px 444px;
+  }
+}

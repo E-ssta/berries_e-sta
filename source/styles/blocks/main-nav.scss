@@ -8,16 +8,60 @@
 
 .main-nav__logo {
   margin: 0;
-  padding: 6px 9px 4px;
+
 
   .logo__text {
     display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+}
+
+.logo-index {
+  .logo__leaf,
+  .logo__text {
+    fill: $accent-green;
+  }
+}
+
+.logo {
+  .logo__leaf,
+  .logo__text {
+    fill: $accent-green;
+  }
+
+  &:hover,
+  &:focus {
+    .logo__text {
+      fill: $add-green;
+    }
+    .logo__leaf {
+      fill: $add-green;
+    }
+  }
+  &:active {
+    .logo__text {
+      fill: $accent-green;
+      opacity: 0.5;
+    }
+    .logo__leaf {
+      fill: $accent-green;
+      opacity: 0.5;
+    }
   }
 }
 
 .logo__picture {
   width: 34px;
   height: 42px;
+  padding: 6px 9px 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 37px;
+    height: 47px;
+  }
 }
 
 
