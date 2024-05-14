@@ -38,6 +38,7 @@
 }
 
 .form-contacts__label {
+  position: relative;
   display: grid;
   gap: 4px;
 
@@ -70,6 +71,7 @@
 }
 
 .form-contacts__label-text {
+  grid-row: 1/2;
   font-size: 14px;
   line-height: 16.44px;
   padding-left: 12px;
@@ -90,41 +92,35 @@
 }
 
 .form-contacts__field {
+  grid-row: 2/3;
+  position: relative;
   min-height: 52px;
   padding: 12px 16px;
   font-family: "Raleway", Arial, serif;
-  color: rgba(142, 152, 146, 0.7);
   font-size: 16px;
   line-height: 20px;
   border: 1px solid $accent-green;
   border-radius: 20px;
+
+  &::placeholder {
+    color: rgba(142, 152, 146, 0.7);
+  }
 }
 
 .form-contacts__field-long {
+  grid-row: 2/3;
   min-height: 88px;
   padding: 12px 16px;
   font-family: "Raleway", Arial, serif;
-  color: rgba(142, 152, 146, 0.7);
   font-size: 16px;
   line-height: 20px;
   border: 1px solid $accent-green;
   border-radius: 20px;
+
+  &::placeholder {
+    color: rgba(142, 152, 146, 0.7);
+  }
 }
-
-// .form-contacts__tooltip-error {
-//   position: absolute;
-//   bottom: -4px;
-//   left: 12px;
-//   display: none;
-//   font-size: 14px;
-//   line-height: 16.44px;
-//   color: $add-pink;
-
-//   @media (min-width: $tablet-width) {
-//     font-size: 16px;
-//     line-height: 20px;
-//   }
-// }
 
 .form-contacts__field,
 .form-contacts__field-long {
@@ -141,28 +137,9 @@
   }
 
   &--error {
-    position: relative;
     outline: none;
     border-color: $add-pink;
     color: $text-black;
-
-    &::after {
-      position: absolute;
-      content:'Введите данные в верном формате';
-      width: max-content;
-      height: auto;
-      bottom: -4px;
-      left: 12px;
-      display: none;
-      font-size: 14px;
-      line-height: 16.44px;
-      color: $add-pink;
-
-      @media (min-width: $tablet-width) {
-        font-size: 16px;
-        line-height: 20px;
-      }
-    }
   }
 
   &:disabled {
@@ -171,3 +148,20 @@
   }
 }
 
+.form-contacts__field--error + .form-contacts__label-text::after {
+  position: absolute;
+  content:'Введите данные в верном формате';
+  width: 100%;
+  bottom: -20px;
+  left: 12px;
+  font-size: 14px;
+  line-height: 16.44px;
+  color: $add-pink;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    bottom: -24px;
+  }
+}
