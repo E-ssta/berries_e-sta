@@ -36,6 +36,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: max-content;
     grid-template-columns: auto auto auto;
     column-gap: 48px;
   }
@@ -46,6 +47,16 @@
   padding-left: 36px;
   display: flex;
   align-items: center;
+
+  &-label {
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 1px;
+      padding-bottom: 1px;
+    }
+  }
 }
 
 .storage-type__item:not(:last-child) {
@@ -53,6 +64,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    width: max-content;
   }
 }
 

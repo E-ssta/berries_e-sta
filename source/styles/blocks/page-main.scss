@@ -4,10 +4,14 @@
   padding: 60px 28px 190px 28px;
   display: flex;
   flex-direction: column;
-  background-image: url("../../images/berries-main@2x.jpeg");
+  background-image: url("../../images/berries-main@1x.jpeg");
   background-repeat: no-repeat;
   background-size: auto 135%;
   background-position: 29% 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/berries-main@2x.jpeg");
+  }
 
   @media (min-width: $tablet-width) {
     max-width: $desktop-width;

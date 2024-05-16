@@ -27,6 +27,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
+  gap: 24px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

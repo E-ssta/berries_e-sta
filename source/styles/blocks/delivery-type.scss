@@ -30,13 +30,16 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    gap: 24px;
+    gap: 48px;
     grid-template-columns: 42% 52%;
+    margin: 0 auto;
+  }
 
-    @media (min-width: $tablet-width) {
-      gap: 48px;
-      grid-template-columns: 38% 54%;
-    }
+  @media (min-width: $desktop-width) {
+    gap: 48px;
+    grid-template-columns: 38% 54%;
+    width: max-content;
+    margin: 0;
   }
 }
 
@@ -45,6 +48,11 @@
   padding-left: 36px;
   display: flex;
   align-items: center;
+
+
+  @media (min-width: $desktop-width) {
+    width: max-content;
+  }
 }
 
 .delivery-type__item-label {
