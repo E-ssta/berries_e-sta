@@ -1,0 +1,41 @@
+.form-info__title {
+  font-family: "Comfortaa", Arial, serif;
+  color: $accent-green;
+  font-size: 36px;
+  line-height: 40.14px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 48px;
+    line-height: 53.52px;
+    margin: 0;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 52px;
+    line-height: 57.98px;
+    margin: 0;
+    margin-bottom: 48px;
+  }
+}
+
+.form-info__description {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+
+  // @media (min-width: $tablet-width) {
+  //   margin: 0;
+  //   margin-bottom: 48px;
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   margin: 0 23.5px;
+  //   margin-bottom: 52px;
+  // }
+}

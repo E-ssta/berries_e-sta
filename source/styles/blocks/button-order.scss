@@ -1,0 +1,21 @@
+.button-order {
+  background-color: $accent-maginta;
+  color: $bg-white;
+  font-family: "Raleway", Arial, serif;
+  font-size: 20px;
+  line-height: 23.48px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border: none;
+  border-radius: 40px;
+
+  &:hover, &:focus {
+    background-color: $add-rose;
+  }
+
+  &:active {
+    background-color: rgba(106, 16, 122, 0.6);
+  }
+}

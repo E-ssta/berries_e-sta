@@ -1,0 +1,169 @@
+.form-contacts__title {
+  font-family: "Raleway", Arial, serif;
+  color: $accent-green;
+  font-size: 20px;
+  line-height: 23.48px;
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 32.87px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 48px;
+  }
+}
+
+.form__contacts-wrapper {
+  display: grid;
+  gap: 36px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 48% 48%;
+    column-gap: 24px;
+    row-gap: 36px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 78%;
+    margin: 0;
+  }
+}
+
+.form-contacts__label {
+  position: relative;
+  display: grid;
+  gap: 4px;
+
+  @media (min-width: $tablet-width) {
+    &--nickname {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    &--tel {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    &--email {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    &--address {
+      grid-column: 1/-1;
+      grid-row: 3/4;
+    }
+
+    &--wishes {
+      grid-column: 1/-1;
+      grid-row: 4/5;
+    }
+  }
+}
+
+.form-contacts__label-text {
+  grid-row: 1/2;
+  font-size: 14px;
+  line-height: 16.44px;
+  padding-left: 12px;
+  padding-top: 1.5px;
+  padding-bottom: 1.5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.star {
+  margin-left: 2px;
+  color: $add-pink;
+}
+
+.form-contacts__field {
+  grid-row: 2/3;
+  position: relative;
+  min-height: 52px;
+  padding: 12px 16px;
+  font-family: "Raleway", Arial, serif;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid $accent-green;
+  border-radius: 20px;
+
+  &::placeholder {
+    color: rgba(142, 152, 146, 0.7);
+  }
+}
+
+.form-contacts__field-long {
+  grid-row: 2/3;
+  min-height: 88px;
+  padding: 12px 16px;
+  font-family: "Raleway", Arial, serif;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid $accent-green;
+  border-radius: 20px;
+
+  &::placeholder {
+    color: rgba(142, 152, 146, 0.7);
+  }
+}
+
+.form-contacts__field,
+.form-contacts__field-long {
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: $add-green;
+  }
+
+  &:active {
+    outline: none;
+    border-color: $add-green;
+    color: $text-black;
+  }
+
+  &--error {
+    outline: none;
+    border-color: $add-pink;
+    color: $text-black;
+  }
+
+  &:disabled {
+    outline: none;
+    border-color: rgba(142, 152, 146, 0.7);
+  }
+}
+
+.form-contacts__field--error + .form-contacts__label-text::after {
+  position: absolute;
+  content:'Введите данные в верном формате';
+  width: 100%;
+  bottom: -20px;
+  left: 12px;
+  font-size: 14px;
+  line-height: 16.44px;
+  color: $add-pink;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    bottom: -24px;
+  }
+}

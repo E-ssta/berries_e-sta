@@ -4,4 +4,30 @@
 @import "./common/fonts.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/info.scss";
+@import "./blocks/benefits-list.scss";
+@import "./blocks/button-main.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/news.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social-list.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/data.scss";
+@import "./blocks/list-products.scss";
+@import "./blocks/button-order.scss";
+@import "./blocks/news-list.scss";
+@import "./blocks/nav-list.scss";
+@import "./blocks/form-main.scss";
+@import "./blocks/form-info.scss";
+@import "./blocks/form.scss";
+@import "./blocks/berries-type.scss";
+@import "./blocks/storage-type.scss";
+@import "./blocks/delivery-type.scss";
+@import "./blocks/form-contacts.scss";
+@import "./blocks/form-button.scss";

@@ -1,0 +1,89 @@
+.form__wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 83px 26px 89px 26px;
+
+  @media (min-width: $tablet-width) {
+    max-width: $desktop-width;
+    padding: 115px 72px 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    padding: 104px 324px 100px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 228px;
+    height: 32px;
+    background-image: url("../../images/section-line-leaf.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 296px;
+      height: 42px;
+    }
+  }
+}
+
+.form__berries-type,
+.form__storage-type,
+.form__delivery-type,
+.form__contacts {
+  border: none;
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+}
+
+.form__berries-type {
+  @media (min-width: $tablet-width) {
+    margin: 0 70px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 57px;
+  }
+}
+
+.form__storage-type {
+  @media (min-width: $tablet-width) {
+    margin: 0 70px 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 48px;
+  }
+}
+
+.form__delivery-type {
+  @media (min-width: $tablet-width) {
+    margin: 0 70px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 46px;
+  }
+}
+
+.form__button {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 83px;
+
+  @media (min-width: $tablet-width) {
+    width: max-content;
+    padding: 16px 104px;
+  }
+}

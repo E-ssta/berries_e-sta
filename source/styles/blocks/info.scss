@@ -1,0 +1,55 @@
+.info__title {
+  font-family: "Comfortaa", Arial, serif;
+  color: $accent-green;
+  font-size: 36px;
+  line-height: 40.14px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 48px;
+    line-height: 53.52px;
+    margin: 0;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    font-size: 52px;
+    line-height: 57.98px;
+    margin: 0;
+    margin-bottom: 52px;
+  }
+}
+
+.info__benefits {
+  margin: 0 28px 58px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 23.5px;
+    margin-bottom: 52px;
+  }
+}
+
+.info__button {
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 83px;
+
+  @media (min-width: $tablet-width) {
+    width: max-content;
+    margin-left: 37px;
+    padding: 16px 104px;
+  }
+}

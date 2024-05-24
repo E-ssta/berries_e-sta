@@ -10,7 +10,7 @@
   <body class="page__body">
     <header class="page__header page-header">
       <nav class="main-nav main-nav--closed">
-        <a class="logo-index">
+        <a class="logo" href="index.html">
           <svg class="main-nav__logo" width="133" height="60" viewBox="0 0 133 60" fill="none" role="img" aria-label="Ягодки">
             <g class="logo__picture">
               <path d="M16.0708 21.2816C16.0708 21.2816 13.9925 22.5725 13.5293 24.695C13.0661 26.8175 13.5293 29.1416 13.5293 29.1416C13.5293 29.1416 10.27 30.5325 10.27 34.9066C10.27 39.2808 13.0194 40.5174 13.0194 40.5174C13.0194 40.5174 13.0516 45.68 16.128 48.4641C19.2044 51.2483 22.4323 51.2616 22.4323 51.2616C22.4323 51.2616 24.1111 54.9349 29.0499 54.9349C33.9888 54.9349 35.6684 51.2616 35.6684 51.2616C35.6684 51.2616 39.0114 50.7566 41.9727 48.4641C44.9339 46.1725 44.8525 40.5174 44.8525 40.5174C44.8525 40.5174 47.8307 39.2816 47.8307 34.9066C47.8307 30.5316 44.5706 29.1425 44.5706 29.1425C44.5706 29.1425 45.0354 26.8175 44.5706 24.695C44.1058 22.5725 42.029 21.2816 42.029 21.2816" fill="#B22EC8"/>
@@ -37,8 +37,8 @@
         </button>
 
         <ul class="main-nav__menu nav-list nav-list--main">
-          <li class="nav-list__item nav-list__item--current">
-            <a class="nav-list__link">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="index.html">
               Каталог
             </a>
           </li>
@@ -52,8 +52,8 @@
               Контакты
             </a>
           </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="form.html">
+          <li class="nav-list__item nav-list__item--current">
+            <a class="nav-list__link">
               Заказать
             </a>
           </li>
@@ -61,222 +61,188 @@
       </nav>
     </header>
 
-    <main class="page__main page-main">
-      <section class="page-main__info info">
-        <h1 class="info__title">
-          Ягоды с&nbsp;доставкой
+    <main class="page__form form-main">
+      <section class="form-main__info form-info">
+        <h1 class="form-info__title">
+          Закажи ягоды
         </h1>
-        <ul class="info__benefits benefits-list">
-          <li class="benefits-list__item benefits-list__item--leaf">Отборные ягоды</li>
-          <li class="benefits-list__item benefits-list__item--snow">Натуральный вкус сохранён методом шоковой заморозки</li>
-          <li class="benefits-list__item benefits-list__item--moto">Доставка по Санкт-Петербургу</li>
-        </ul>
-        <button class="info__button button-main" type="button">
-          Заказать
-        </button>
+        <p class="form-info__description">
+          Мы соберем для вас ягоды и доставим их в удобном
+          для вас виде - свежими или замороженными
+        </p>
       </section>
 
-      <section class="page-main__catalog catalog">
-        <h2 class="catalog__title">
-          Каталог
+      <section class="page__form form">
+        <h2 class="visually-hidden">
+          Заполните форму заказа ягод
         </h2>
-        <ul class="catalog__list list-products">
-          <li class="list-products__item item-products">
-            <a class="item-products__title" href="catalog.html/raspberry">
-              <picture>
-                <source type="image/webp" srcset="../../images/raspberry@1x.webp 1x, ../../images/raspberry@2x.webp 2x">
-                <img class="item-products__title-photo" src="../../images/raspberry@1x.jpg 1x" srcset="../../images/raspberry@2x.jpg 2x" width="264" height="180" alt="малина">
-              </picture>
-              <h3 class="item-products__title-text">
-                Малина
-              </h3>
-            </a>
-            <dl class="item-products__description item-description">
-              <dt class="item-description__price">350 ₽</dt>
-              <dd class="item-descriptionm__meaning">За 1 кг</dd>
-            </dl>
-            <a class="item-products__button button-order" href="form.html">
-              Заказать
-            </a>
-          </li>
-          <li class="list-products__item item-products">
-            <a class="item-products__title" href="catalog.html/blackberry">
-              <picture>
-                <source type="image/webp" srcset="../../images/blackberry@1x.webp 1x, ../../images/blackberry@2x.webp 2x">
-                <img class="item-products__title-photo" src="../../images/blackberry@1x.jpg 1x" srcset="../../images/blackberry@2x.jpg 2x" width="264" height="180" alt="Ежевика">
-              </picture>
-              <h3 class="item-products__title-text">
-                Ежевика
-              </h3>
-            </a>
-            <dl class="item-products__description item-description">
-              <dt class="item-description__price">550 ₽</dt>
-              <dd class="item-descriptionm__meaning">За 1 кг</dd>
-            </dl>
-            <a class="item-products__button button-order"  href="form.html">
-              Заказать
-            </a>
-          </li>
-          <li class="list-products__item item-products">
-            <a class="item-products__title" href="catalog.html/lingonberry">
-              <picture>
-                <source type="image/webp" srcset="../../images/lingonberry@1x.webp 1x, ../../images/lingonberry@2x.webp 2x">
-                <img class="item-products__title-photo" src="../../images/lingonberry@1x.jpg 1x" srcset="../../images/lingonberry@2x.jpg 2x" width="264" height="180" alt="брусника">
-              </picture>
-              <h3 class="item-products__title-text">
-                Брусника
-              </h3>
-            </a>
-            <dl class="item-products__description item-description">
-              <dt class="item-description__price">390 ₽</dt>
-              <dd class="item-descriptionm__meaning">За 1 кг</dd>
-            </dl>
-            <a class="item-products__button button-order"  href="form.html">
-              Заказать
-            </a>
-          </li>
-          <li class="list-products__item item-products">
-            <a class="item-products__title" href="catalog.html/strawberry">
-              <picture>
-                <source type="image/webp" srcset="../../images/strawberry@1x.webp 1x, ../../images/strawberry@2x.webp 2x">
-                <img class="item-products__title-photo" src="../../images/strawberry@1x.jpg 1x" srcset="../../images/strawberry@2x.jpg 2x" width="264" height="180" alt="клубника">
-              </picture>
-              <h3 class="item-products__title-text">
-                Клубника
-              </h3>
-            </a>
-            <dl class="item-products__description item-description">
-              <dt class="item-description__price">450 ₽</dt>
-              <dd class="item-descriptionm__meaning">За 1 кг</dd>
-            </dl>
-            <a class="item-products__button button-order" href="form.html">
-              Заказать
-            </a>
-          </li>
-          <li class="list-products__item item-products">
-            <a class="item-products__title" href="catalog.html/cherry">
-              <picture>
-                <source type="image/webp" srcset="../../images/cherry@1x.webp 1x, ../../images/cherry@2x.webp 2x">
-                <img class="item-products__title-photo" src="../../images/cherry@1x.jpg 1x" srcset="../../images/cherry@2x.jpg 2x" width="264" height="180" alt="вишня">
-              </picture>
-              <h3 class="item-products__title-text">
-                Вишня
-              </h3>
-            </a>
-            <dl class="item-products__description item-description">
-              <dt class="item-description__price">375 ₽</dt>
-              <dd class="item-descriptionm__meaning">За 1 кг</dd>
-            </dl>
-            <a class="item-products__button button-order" href="form.html">
-              Заказать
-            </a>
-          </li>
-          <li class="list-products__item item-products">
-            <a class="item-products__title" href="catalog.html/gooseberry">
-              <picture>
-                <source type="image/webp" srcset="../../images/gooseberry@1x.webp 1x, ../../images/gooseberry@2x.webp 2x">
-                <img class="item-products__title-photo" src="../../images/gooseberry@1x.jpg 1x" srcset="../../images/gooseberry@2x.jpg 2x" width="264" height="180" alt="крыжовник">
-              </picture>
-              <h3 class="item-products__title-text">
-                Крыжовник
-              </h3>
-            </a>
-            <dl class="item-products__description item-description">
-              <dt class="item-description__price">300 ₽</dt>
-              <dd class="item-descriptionm__meaning">За 1 кг</dd>
-            </dl>
-            <a class="item-products__button button-order" href="form.html">
-              Заказать
-            </a>
-          </li>
-          <li class="list-products__item item-products">
-            <a class="item-products__title" href="catalog.html/blueberry">
-              <picture>
-                <source type="image/webp" srcset="../../images/blueberry@1x.webp 1x, ../../images/blueberry@2x.webp 2x">
-                <img class="item-products__title-photo" src="../../images/blueberry@1x.jpg 1x" srcset="../../images/blueberry@2x.jpg 2x" width="264" height="180" alt="голубика">
-              </picture>
-              <h3 class="item-products__title-text">
-                Голубика
-              </h3>
-            </a>
-            <dl class="item-products__description item-description">
-              <dt class="item-description__price">510 ₽</dt>
-              <dd class="item-descriptionm__meaning">За 1 кг</dd>
-            </dl>
-            <a class="item-products__button button-order" href="form.html">
-              Заказать
-            </a>
-          </li>
-          <li class="list-products__item item-products">
-            <a class="item-products__title" href="catalog.html/cranberry">
-              <picture>
-                <source type="image/webp" srcset="../../images/cranberry@1x.webp 1x, ../../images/cranberry@2x.webp 2x">
-                <img class="item-products__title-photo" src="../../images/cranberry@1x.jpg 1x" srcset="../../images/cranberry@2x.jpg 2x" width="264" height="180" alt="клюква">
-              </picture>
-              <h3 class="item-products__title-text">
-                Клюква
-              </h3>
-            </a>
-            <dl class="item-products__description item-description">
-              <dt class="item-description__price">320 ₽</dt>
-              <dd class="item-descriptionm__meaning">За 1 кг</dd>
-            </dl>
-            <a class="item-products__button button-order" href="form.html">
-              Заказать
-            </a>
-          </li>
-        </ul>
-      </section>
+        <form class="form__wrapper" method="post">
+          <fieldset class="form__berries-type berries-type">
+            <legend class="berries-type__title">
+              Выберите ягоды
+            </legend>
+            <ul class="berries-type__list">
+              <li class="berries-type__item">
+                <label class="berries-type__item-label" for="lingonberry">
+                  брусника
+                  <input class="control control-checkbox visually-hidden" id="lingonberry" type="checkbox" name="lingonberry" checked>
+                  <span class="control__mark--checkbox"></span>
+                </label>
+              </li>
+              <li class="berries-type__item">
+                <label class="berries-type__item-label" for="cherry">
+                  вишня
+                  <input class="control control-checkbox visually-hidden" id="cherry" type="checkbox" name="cherry">
+                  <span class="control__mark--checkbox"></span>
+                </label>
+              </li>
+              <li class="berries-type__item">
+                <label class="berries-type__item-label" for="blueberry">
+                  голубика
+                  <input class="control control-checkbox visually-hidden" id="blueberry" type="checkbox" name="blueberry">
+                  <span class="control__mark--checkbox"></span>
+                </label>
+              </li>
+              <li class="berries-type__item">
+                <label class="berries-type__item-label" for="blackberry">
+                  ежевика
+                  <input class="control control-checkbox visually-hidden" id="blackberry" type="checkbox" name="blackberry">
+                  <span class="control__mark--checkbox"></span>
+                </label>
+              </li>
+              <li class="berries-type__item">
+                <label class="berries-type__item-label" for="strawberry">
+                  клубника
+                  <input class="control control-checkbox visually-hidden" id="strawberry" type="checkbox" name="strawberry">
+                  <span class="control__mark--checkbox"></span>
+                </label>
+              </li>
+              <li class="berries-type__item">
+                <label class="berries-type__item-label" for="cranberry">
+                  клюква
+                  <input class="control control-checkbox visually-hidden" id="cranberry" type="checkbox" name="cranberry">
+                  <span class="control__mark--checkbox"></span>
+                </label>
+              </li>
+              <li class="berries-type__item">
+                <label class="berries-type__item-label" for="gooseberry">
+                  крыжовник
+                  <input class="control control-checkbox visually-hidden" id="gooseberry" type="checkbox" name="gooseberry">
+                  <span class="control__mark--checkbox"></span>
+                </label>
+              </li>
+              <li class="berries-type__item">
+                <label class="berries-type__item-label" for="raspberry">
+                  малина
+                  <input class="control control-checkbox visually-hidden" id="raspberry" type="checkbox" name="raspberry">
+                  <span class="control__mark--checkbox"></span>
+                </label>
+              </li>
+              <li class="berries-type__item">
+                <label class="berries-type__item-label" for="cloudberry">
+                  морошка
+                  <input class="control control-checkbox visually-hidden" id="cloudberry" type="checkbox" name="cloudberry" disabled>
+                  <span class="control__mark--checkbox"></span>
+                </label>
+              </li>
+              <li class="berries-type__item">
+                <label class="berries-type__item-label" for="blueberries">
+                  черника
+                  <input class="control control-checkbox visually-hidden" id="blueberries" type="checkbox" name="blueberries" disabled>
+                  <span class="control__mark--checkbox"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
-      <section class="page-main__news news">
-        <h2 class="news__title news-title">
-          Что новенького?
-        </h2>
-        <ul class="news__list news-list">
-          <li class="news-list__article article">
-            <h3 class="article__title">
-              Новый урожай клубники
-            </h3>
-            <p class="article__text">
-              К нам поступила свежая сочная ароматная клубника
-              из Алтайского края. Крупные отборные ягоды можно
-              приобрести свежими от 200 гр, или замороженными
-              от 1 кг. Поторопитесь, сезон клубники короткий и
-              свежие ягоды скоро закончатся.
-            </p>
-            <date class="article__date">
-              22 июня 2022
-            </date>
-          </li>
-          <li class="news-list__article article">
-            <h3 class="article__title">
-              В июне дарим скидку 15% на все свежие ягоды
-            </h3>
-            <p class="article__text">
-              Свежие ягоды урожая этого года со скидкой 15%.
-              Клубнику, малину, голубику, вишню доставим от 200 гр.
-            </p>
-            <date class="article__date">
-              15 июня 2022
-            </date>
-          </li>
-          <li class="news-list__article article">
-            <h3 class="article__title">
-              Микс из ягод
-            </h3>
-            <p class="article__text">
-              Мы приготовим для вас смеси из различных
-              замороженных ягод по вашему пожеланию.
-              Ягодные смеси удобно использовать для
-              приготовления напитков. Все ягоды замораживаются
-              методом шоковой заморозки, что позволяет сохранить
-              их естественный вкус и аромат.
-            </p>
-            <date class="article__date">
-              02 июня 2022
-            </date>
-          </li>
-        </ul>
+          <fieldset class="form__storage-type storage-type">
+            <legend class="storage-type__title">
+              Вид хранения
+            </legend>
+            <ul class="storage-type__list">
+              <li class="storage-type__item">
+                <label class="storage-type__item-label" for="fresh">
+                  свежие ягоды
+                  <input class="control control-checkbox visually-hidden" id="fresh" type="checkbox" name="fresh">
+                  <span class="control__mark--checkbox"></span>
+                </label>
+              </li>
+              <li class="storage-type__item">
+                <label class="storage-type__item-label" for="frozen">
+                  замороженные ягоды
+                  <input class="control control-checkbox visually-hidden" id="frozen" type="checkbox" name="frozen">
+                  <span class="control__mark--checkbox"></span>
+                </label>
+              </li>
+              <li class="storage-type__item">
+                <label class="storage-type__item-label" for="mixs">
+                  ягодные миксы
+                  <input class="control control-checkbox visually-hidden" id="mixs" type="checkbox" name="mixs">
+                  <span class="control__mark--checkbox"></span>
+              </label>
+              </li>
+
+            </ul>
+
+          </fieldset>
+
+          <fieldset class="form__delivery-type delivery-type">
+            <legend class="delivery-type__title">
+              Способ доставки
+            </legend>
+            <ul class="delivery-type__list">
+              <li class="delivery-type__item">
+                <label class="delivery-type__item-label" for="delivery-need">
+                  Доставка<br>(по&nbsp;СПБ в&nbsp;пределах КАД)
+                  <input class="control control-radio visually-hidden" id="delivery-need" type="radio" name="delivery-type__radio" value="delivery-need">
+                  <span class="control__mark--radio"></span>
+                </label>
+              </li>
+              <li class="delivery-type__item">
+                <label class="delivery-type__item-label" for="pickup">
+                  Самовывоз<br>(Набережная Обводного канала, 101)
+                  <input class="control control-radio visually-hidden" id="pickup" type="radio" name="delivery-type__radio" value="pickup" checked>
+                  <span class="control__mark--radio"></span>
+                </label>
+              </li>
+            </ul>
+
+          </fieldset>
+
+          <fieldset class="form__contacts form-contacts">
+            <legend class="form-contacts__title">
+              Ваши контакты
+            </legend>
+            <div class="form__contacts-wrapper">
+              <label class="form-contacts__label form-contacts__label--nickname" for="nickname">
+                <input class="form-contacts__field" type="text" name="nickname" id="nickname" placeholder="Как к вам обращаться?" required>
+                <span class="form-contacts__label-text">Имя<span class="star">*</span></span>
+              </label>
+              <label class="form-contacts__label form-contacts__label--tel" for="tel">
+                <input class="form-contacts__field" type="tel" name="tel" id="tel" placeholder="+7 ххх ххх хх хх"
+                pattern="[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{2}[0-9]{2}" required>
+                <span class="form-contacts__label-text">Телефон<span class="star">*</span></span>
+              </label>
+              <label class="form-contacts__label form-contacts__label--email" for="email">
+                <input class="form-contacts__field" type="email" name="email" id="email" placeholder="Ваш email" required>
+                <span class="form-contacts__label-text">E&#8209;mail<span class="star">*</span></span>
+              </label>
+              <label class="form-contacts__label form-contacts__label--address" for="address">
+                <input class="form-contacts__field-long" type="text" name="address" id="address" placeholder="Адрес в Санкт-Петербурге" required>
+                <span class="form-contacts__label-text">Адрес<span class="star">*</span></span>
+              </label>
+              <label class="form-contacts__label form-contacts__label--wishes" for="wishes">
+                <textarea class="form-contacts__field" rows="5" name="wishes" id="wishes" placeholder="Чем мы можем вам помочь?"></textarea>
+                <span class="form-contacts__label-text">Пожелания к заказу</span>
+              </label>
+
+            </div>
+          </fieldset>
+
+          <button class="form__button form-button" type="submit" formtarget="blank" formaction="https://echo.htmlacademy.ru/">
+            Заказать
+          </button>
+        </form>
       </section>
 
       <section class="page-main__contacts contacts">

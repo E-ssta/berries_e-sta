@@ -1,0 +1,79 @@
+.page {
+  min-width: 320px;
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  background-color: $bg-white;
+}
+
+.page__body {
+  font-family: "Raleway", "Arial", serif;
+  color: $text-black;
+  font-size: 14px;
+  line-height: 16.44px;
+  font-weight: 400;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.page__form {
+  font-family: "Raleway", "Arial", serif;
+  color: $text-black;
+  font-size: 16px;
+  line-height: 18.78px;
+  font-weight: 400;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.page__header {
+  position: relative;
+  z-index: 500;
+  background-color: $bg-lith-blue;
+  color: $text-black;
+  max-width: $tablet-width;
+  margin: 0 auto;
+  padding: 4px 26px 4px 21px;
+  box-shadow: 0 4px 4px rgba(88, 13, 101, 0.25);
+  // border-bottom: 2px solid red;
+
+  @media (min-width: $tablet-width) {
+    max-width: $desktop-width;
+    padding: 22px 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    padding: 24px 192px 24px 156px;
+  }
+}
+
+.page__footer {
+  background-color: $bg-lith-blue;
+  color: $text-black;
+  max-width: $tablet-width;
+  margin: 0 auto;
+  padding: 11px 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: $desktop-width;
+    padding: 22px 26px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    padding: 24px 159px 24px 156px;
+  }
+}

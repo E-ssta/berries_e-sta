@@ -1,0 +1,25 @@
+.button-main {
+  background-color: $accent-maginta;
+  color: $bg-white;
+  font-family: "Raleway", Arial, serif;
+  font-size: 20px;
+  line-height: 23.48px;
+  text-align: center;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 4px rgba(88, 13, 101, 0.25);
+  border: none;
+  border-radius: 40px;
+
+  &:hover, &:focus {
+    background-color: $add-rose;
+  }
+
+  &:active {
+    background-color: rgba(106, 16, 122, 0.6);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 32.87px;
+  }
+}

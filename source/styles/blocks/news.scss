@@ -1,0 +1,43 @@
+.news__title {
+  font-family: "Comfortaa", Arial, serif;
+  color: $accent-green;
+  font-size: 36px;
+  line-height: 40.14px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 64px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 48px;
+    line-height: 53.52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 52px;
+    line-height: 57.98px;
+    margin-bottom: 98px;
+  }
+}
+
+.news__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 24px;
+  }
+
+}
