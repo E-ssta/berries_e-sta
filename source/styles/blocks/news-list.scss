@@ -49,6 +49,8 @@
   margin: 0 12px;
   margin-bottom: 20px;
   padding: 0;
+  min-width: 204px;
+  min-height: 68px;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;

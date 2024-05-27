@@ -1,5 +1,6 @@
 node_modules
 build
+pixelPerfect
 .idea
 .DS_Store
 raw/**/*.jpg

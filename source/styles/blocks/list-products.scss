@@ -48,9 +48,17 @@
   gap: 12px;
   width: max-content;
   align-self: center;
+  font-size: 18px;
+  line-height: 20px;
 }
 
-.item-descriptionm__meaning {
+.item-description__price,
+.item-description__meaning {
+  min-width: 52px;
+  min-height: 20px;
+}
+
+.item-description__meaning {
   margin: 0;
 }
 

@@ -43,9 +43,19 @@
   color: $text-black;
   max-width: $tablet-width;
   margin: 0 auto;
-  padding: 4px 26px 4px 21px;
-  box-shadow: 0 4px 4px rgba(88, 13, 101, 0.25);
-  // border-bottom: 2px solid red;
+  padding: 4px 21px 4px 26px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 4px rgba(88, 13, 101, 0.25);
+    pointer-events: none;
+  }
 
   @media (min-width: $tablet-width) {
     max-width: $desktop-width;
@@ -63,7 +73,7 @@
   color: $text-black;
   max-width: $tablet-width;
   margin: 0 auto;
-  padding: 11px 26px 20px;
+  padding: 11px 26px 20px 26px;
 
   @media (min-width: $tablet-width) {
     max-width: $desktop-width;

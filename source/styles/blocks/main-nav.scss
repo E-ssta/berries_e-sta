@@ -9,7 +9,23 @@
 
 .main-nav__logo {
   margin: 0;
+  width: auto;
+  height: 52px;
 
+  @media (min-width: $desktop-width) {
+    height: 60px;
+  }
+
+  .logo__picture {
+    width: 34px;
+    height: 42px;
+    padding: 6px 9px 4px;
+
+    @media (min-width: $tablet-width) {
+      width: 37px;
+      height: 47px;
+    }
+  }
 
   .logo__text {
     display: none;
@@ -53,18 +69,6 @@
     }
   }
 }
-
-.logo__picture {
-  width: 34px;
-  height: 42px;
-  padding: 6px 9px 4px;
-
-  @media (min-width: $tablet-width) {
-    width: 37px;
-    height: 47px;
-  }
-}
-
 
 .main-nav--closed .main-nav__toggle {
   position: relative;

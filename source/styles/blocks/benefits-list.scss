@@ -9,11 +9,24 @@
 }
 
 .benefits-list__item {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   position: relative;
   padding-left: 44px;
   min-height: 32px;
+
+  &--leaf {
+    display: flex;
+    align-items: center;
+  }
+
+  &--snow {
+    min-height: 64px;
+  }
+
+  &--moto {
+    min-height: 44px;
+  }
 
   &:not(:last-child) {
     margin-bottom: 12px;
