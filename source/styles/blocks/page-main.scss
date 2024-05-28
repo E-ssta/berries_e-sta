@@ -16,15 +16,15 @@
   @media (min-width: $tablet-width) {
     max-width: $desktop-width;
     padding: 142px 22px 420px 214px;
-    background-size: auto 120%;
-    background-position: 37% 30%;
+    background-size: auto 105%;
+    background-position: 41% -10%;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 100%;
     padding: 172px 351px 252px 540px;
     background-size: auto 135%;
-    background-position: 85% 50%;
+    background-position: 80% 50%;
   }
 }
 

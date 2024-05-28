@@ -22,10 +22,18 @@
 
   &--snow {
     min-height: 64px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 32px;
+    }
   }
 
   &--moto {
     min-height: 44px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 32px;
+    }
   }
 
   &:not(:last-child) {

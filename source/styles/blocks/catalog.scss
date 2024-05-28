@@ -12,7 +12,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 48px;
-    line-height: 53.52px;
+    line-height: 54px;
+    margin-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,11 +34,12 @@
   @media (min-width: $tablet-width) {
     display: grid;
     gap: 52px;
-    grid-template-columns: 46% 46%;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
     gap: 24px;
-    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
