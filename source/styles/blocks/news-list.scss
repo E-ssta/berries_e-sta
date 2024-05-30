@@ -24,6 +24,10 @@
       height: 40px;
       bottom: 42px;
     }
+
+    @media (min-width: $desktop-width) {
+      bottom: 44px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -33,7 +37,7 @@
 
   @media (min-width: $desktop-width) {
     width: 31.9%;
-    padding: 32px 36px 108px;
+    padding: 32px 36px 102px;
   }
 }
 

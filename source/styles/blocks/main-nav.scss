@@ -15,17 +15,6 @@
     height: 60px;
   }
 
-  // .logo__picture {
-  //   width: 34px;
-  //   height: 42px;
-  //   padding: 6px 9px 4px;
-
-  //   @media (min-width: $tablet-width) {
-  //     width: 37px;
-  //     height: 47px;
-  //   }
-  // }
-
   .logo__text {
     display: none;
 
@@ -36,13 +25,27 @@
 }
 
 .logo-index {
+  height: 52px;
+  cursor: pointer;
+
   .logo__leaf,
   .logo__text {
     fill: $accent-green;
   }
+
+  @media (min-width: $tablet-width) {
+    height: 60px;
+  }
 }
 
 .logo {
+  height: 52px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    height: 60px;
+  }
+
   .logo__leaf,
   .logo__text {
     fill: $accent-green;

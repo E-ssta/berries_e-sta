@@ -23,6 +23,14 @@
   margin-bottom: 70px;
   padding: 0;
 
+  .form-main__contacts & {
+    margin-bottom: 64px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 72px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 48px;
     line-height: 54px;
@@ -45,11 +53,23 @@
   line-height: 18.74px;
   text-align: center;
 
+  .form-main__contacts & {
+    margin-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
     text-align: left;
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 100px;
   }
 }
 
@@ -66,7 +86,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 99px;
+    margin-left: 100px;
     margin-bottom: 0;
   }
 }

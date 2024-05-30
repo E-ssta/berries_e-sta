@@ -39,7 +39,8 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 52px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
