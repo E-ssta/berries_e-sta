@@ -39,4 +39,9 @@
   font-weight: 400;
   vertical-align: middle;
   margin-right: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }

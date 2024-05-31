@@ -76,14 +76,25 @@
   }
 }
 
-.form__button {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  padding: 16px 83px;
+.form__contacts {
 
   @media (min-width: $tablet-width) {
-    width: max-content;
-    padding: 16px 104px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+  }
+}
+
+.form__button {
+  display: block;
+  min-width: 100%;
+  margin: 0 auto;
+  padding: 16px 84px 16px 82px;
+
+  @media (min-width: $tablet-width) {
+    min-width: auto;
+    padding: 16px 104px 18px 104px;
   }
 }

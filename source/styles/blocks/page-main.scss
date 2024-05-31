@@ -6,8 +6,8 @@
   flex-direction: column;
   background-image: url("../../images/berries-main@1x.jpeg");
   background-repeat: no-repeat;
-  background-size: auto 135%;
-  background-position: 29% 0;
+  background-size: auto 136%;
+  background-position: 28.3% 0;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/berries-main@2x.jpeg");
@@ -16,15 +16,15 @@
   @media (min-width: $tablet-width) {
     max-width: $desktop-width;
     padding: 142px 22px 420px 214px;
-    background-size: auto 120%;
-    background-position: 37% 30%;
+    background-size: auto 105%;
+    background-position: 41% -10%;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 100%;
-    padding: 172px 351px 252px 540px;
-    background-size: auto 135%;
-    background-position: 85% 50%;
+    padding: 172px 350px 252px 540px;
+    background-size: auto 132%;
+    background-position: 105% 50%;
   }
 }
 

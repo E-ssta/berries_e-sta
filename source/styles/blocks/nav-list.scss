@@ -28,6 +28,11 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     min-width: 112px;
+    max-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 132px;
   }
 
   &--current {

@@ -9,11 +9,37 @@
 }
 
 .benefits-list__item {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   position: relative;
   padding-left: 44px;
   min-height: 32px;
+
+  &--leaf {
+    display: flex;
+    align-items: center;
+  }
+
+  &--snow {
+    min-height: 64px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 32px;
+    }
+  }
+
+  &--moto {
+    min-height: 44px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      align-items: center;
+    }
+  }
 
   &:not(:last-child) {
     margin-bottom: 12px;
